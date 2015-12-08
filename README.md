@@ -9,7 +9,7 @@ Compatability (Tested so far):
 Setup:
 
 1. Run npm install in the main directory (where package.json is located).
-2. If not already there, create an uploads folder.
+2. If not already there, create an uploads folder in public.
 
 Use 1 : Classifier Algorithms
 
