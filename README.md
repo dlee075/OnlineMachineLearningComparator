@@ -2,9 +2,14 @@ Online Machine Learning Comparator
 
 Compatability (Tested so far):
 
-Google Chrome Browser
-Server in Windows 8 Environment
-Java 1.8 Runtime (Required for Weka Functions)
+1. Google Chrome Browser
+2. Server in Windows 8 Environment
+3. Java 1.8 Runtime (Required for Weka Functions)
+
+Setup:
+
+1. Run npm install in the main directory (where package.json is located).
+2. If not already there, create an uploads folder.
 
 Use 1 : Classifier Algorithms
 
