@@ -9,13 +9,6 @@
       "email": "darius_lee@hotmail.com"
     }
   ],
-  "scripts": {
-    "test": "vows --spec --isolate",
-    "start": "node index.js",
-    "predeploy": "echo im about to deploy",
-    "postdeploy": "echo ive deployed",
-    "prepublish": "coffee --bare --compile --output lib/foo src/foo/*.coffee"
-  },
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
