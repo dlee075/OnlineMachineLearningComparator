@@ -1,0 +1,256 @@
+html{
+	margin : 0;
+	position :relative;
+	width : 100%;
+	height : 100%;
+}
+
+body{
+	margin : 0;
+	width : 100%;
+	height : 100%;
+	position : relative;
+	top : 0px;
+	left : 0px;
+}
+
+form{
+	margin-top : 20px;
+}
+
+.body_container{
+	position : relative;
+	min-height : 100%;
+	width : 100%;
+	display : flex;
+	flex-direction : column;
+	align-content : stretch;
+	align-items : center;
+
+	background-color: #EEE;
+}
+
+.header{
+	border-bottom : 2px solid #444;
+	height : 50px;
+	width : 100%;
+	position : relative;
+	background-color: #FFF;
+
+	order : 0;
+}
+
+.main_body{
+	background-color: #CCC;
+	border-right : solid 1px #333;
+	border-left : solid 1px #555;
+	width : 70%;
+
+	display : flex;
+	order : 1;
+	flex : 1;
+	flex-direction : column;
+	align-items : center;
+	justify-content : center;
+	flex-basis : auto;
+}
+
+.main_container{
+	width : 100%;
+	border-top : solid 1px #555;
+	border-bottom : solid 1px #333;
+	border-radius : 10px;
+	position : relative;
+	text-align: center;
+
+	background-color: #C4DDF1;
+	font-family: Arial, Helvetica, sans-serif;
+
+	display : flex;
+	flex-direction : column;
+}
+
+.main_container h1{
+	padding-top : 10px;
+	font-family : "Lucida Console", Monaco, monospace;
+	border-bottom : solid 1px #666;
+	padding-bottom : 30px;
+	margin-bottom : 0px;
+}
+
+button:hover{
+	cursor : pointer;
+}
+
+.button{
+	border-radius : 10px;
+	padding : 2px;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+#step0{
+	width : 100%;
+	margin : auto;
+	margin-bottom : 20px;
+	padding-bottom : 20px;
+	text-align : center;
+	margin : auto;
+
+	flex-direction : column;
+	align-items : center;
+	display: flex;
+}
+
+#step1{
+	width : 100%;
+	margin : auto;
+	padding-bottom : 20px;
+	text-align: center;
+	position : relative;
+	display : none;
+	flex-direction : column;
+	align-items : center;
+}
+
+.next{
+	margin-top : 20px;
+	padding : 10px;
+	padding-left : 25px;
+	padding-right : 25px;
+	border : 1px solid #AAA;
+	background-color : #EEE;
+	color : #333;
+	border-radius: 15px;
+	font-size : 16px;
+	font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+.next:disabled:hover{
+	cursor : default;
+}
+
+.next:disabled{
+	color : #888;
+}
+
+.addalg{
+	margin-top : 20px;
+	display : flex;
+	flex-direction : row;
+	justify-content : center;
+}
+
+.addalg select{
+	display : block;
+	width : 200px;
+	height : 20px;
+	margin-right : 20px;
+}
+
+#remalg{
+	width : 100%;
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+}
+
+#remalg h4{
+	width : 100%;
+	display : block;
+	margin-bottom : 0px;
+}
+
+.remalgCont{
+	display : flex;
+	flex-direction : row;
+	align-items : center;
+	align-content : center;
+}
+
+#remalg0{
+	text-align : right;
+}
+
+#remalg1{
+	width : 200px;
+	padding-right : 10px;
+}
+
+.none{
+	text-align : center;
+}
+
+.some{
+	text-align : right;
+}
+
+#remalg2{
+	text-align : left;
+	display : flex;
+	flex-direction : column;
+}
+
+.remove{
+	margin : 6px;
+}
+
+.pAlg{
+
+}
+
+#step2{
+	width : 100%;
+	margin : auto;
+	margin-bottom : 20px;
+	padding-bottom : 20px;
+	text-align : center;
+	margin : auto;
+
+	flex-direction : column;
+	align-items : center;
+	display: none;
+}
+
+#step3{
+	width : 100%;
+	margin : auto;
+	margin-bottom : 20px;
+	padding-bottom : 20px;
+	text-align : center;
+	margin : auto;
+	
+	flex-direction : column;
+	align-items : center;
+	display : none;
+}
+
+#step4{
+	width : 100%;
+	margin : auto;
+	margin-bottom : 20px;
+	padding-bottom : 20px;
+	text-align : center;
+	margin : auto;
+	
+	display : none;
+	flex-direction : column;
+	align-items : center;
+}
+
+/* Header CSS */
+.footer{
+	height : 100px;
+	width : 100%;
+	position : relative;
+	float : left;
+	background-color: #FFF;
+
+	border-top : solid #444 2px;
+
+	order : 2;
+}

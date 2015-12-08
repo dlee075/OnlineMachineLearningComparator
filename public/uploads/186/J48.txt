@@ -1,0 +1,18 @@
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         151               83.8889 %
+Incorrectly Classified Instances        29               16.1111 %
+Kappa statistic                          0.6774
+Mean absolute error                      0.168 
+Root mean squared error                  0.3889
+Total Number of Instances              180     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 79 16 |  a = -1
+ 13 72 |  b = 1
+

@@ -1,0 +1,54 @@
+html
+	head
+		link(rel = "stylesheet" type = "text/css" href="styles.css")
+	body
+		.body_container
+			.header
+			.main_body
+				.main_container
+					h1 ML Classifier Algorithm Comparator
+					#step0
+						h2 Welcome
+						p Compare some Weka Algorithms. Train a model and use a test set to compare effectiveness on the dataset.
+						button#start.next Start
+					#step1
+						h4 Step 1
+						p Please Add The Algorithms You Wish To Compare (Select atleast one)
+						.addalg
+							select#selAlg
+								option(selected disabled value = '') Select Here
+								option(value = 'Weka OneR') Weka OneR
+								option(value = 'Weka Bayes Naive') Weka Bayes Naive
+								option(value = 'Weka J48') Weka J48 (C4.5)
+							button#add.button Add
+						#remalg
+							h4 Algorithms Selected:
+							.remalgCont
+								#remalg0
+								#remalg1.none
+									p (none)
+								#remalg2
+						button#algChoose.next(disabled) Next Step
+					#step2
+						h4 Step 2
+						p Please attach a training set to continue:
+						form#uploadTrain(action = "/train" enctype = "multipart/form-data" method = "post" name="form1")
+							input#trainInput(type = "file" name = "trainFile")
+							button.button#trainButton(type = "button") Upload
+							input.hidden(type = "submit" value = "other")
+						button#uploadNext.next(disabled) Next Step
+					#step3
+						h4 Step 3
+						p Please attach a test set:
+						form#uploadTest(action = "/test" enctype = "multipart/form-data" method = "post" name="form2")
+							input#testInput(type = "file" name = "testFile")
+							button.button#testButton(type = "button") Upload
+							input.hidden(type = "submit" value = "other2")
+						button#createRes.button(disabled) Create Results
+						button#testChoose.next(disabled) See Results
+					#step4
+						p The results for each algorithm:
+			.footer
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+		script(src="jquery.form.js")
+		script(src="uploadFile.js")

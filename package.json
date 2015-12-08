@@ -1,0 +1,28 @@
+{
+  "name": "module-name",
+  "version": "10.3.1",
+  "description": "Machine Learning Online Comparator",
+  "author": "Darius Lee",
+  "contributors": [
+    {
+      "name": "Darius Lee",
+      "email": "darius_lee@hotmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "vows --spec --isolate",
+    "start": "node index.js",
+    "predeploy": "echo im about to deploy",
+    "postdeploy": "echo ive deployed",
+    "prepublish": "coffee --bare --compile --output lib/foo src/foo/*.coffee"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "jade": "^1.11.0",
+    "multer": "^1.1.0"
+  },
+  "devDependencies": {},
+  "private": true
+}
